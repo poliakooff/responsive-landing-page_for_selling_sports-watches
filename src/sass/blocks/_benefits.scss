@@ -1,0 +1,59 @@
+.benefits {
+	padding: 70px 0 98px 0;
+	background-color: #f6f6f6;
+	min-height: 470px;
+		// .benefits__items
+
+		&__items {
+			margin-top: 65px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+
+		// .benefits__img
+		&__img {
+			display: block;
+			margin: 0 auto;
+
+			&_animated-cup {
+				animation: cupshine 2s infinite;
+			}
+			&_animated-heart {
+				animation: heartbeat 1s infinite;
+			}
+			&_animated-shoes {
+				animation: shoeswalk 2s infinite;
+				
+			}
+		}
+
+		// .benefits__suptitle
+
+		&__suptitle {
+			margin-top: 38px;
+			color: #0d0d0d;
+			font-size: 18px;
+			font-weight: 700;
+			text-align: center;
+		}
+
+		// .benefits__descr
+
+		&__descr {
+			margin: 0 auto;
+			margin-top: 20px;
+			max-width: 237px;
+			color: #0d0d0d;
+			font-size: 14px;
+			font-weight: 300;
+			text-align: center;
+		}
+
+		// .benefits__link
+
+		&__link {
+			color: #ff0000;
+			text-decoration: underline;
+		}
+}

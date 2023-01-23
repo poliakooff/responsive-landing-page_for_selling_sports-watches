@@ -1,0 +1,14 @@
+.pageup {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    // .pageup__img
+
+    &__img {
+        width: 100%;
+    }
+}

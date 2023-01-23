@@ -1,0 +1,45 @@
+.feed-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    border: none;
+    max-width: 300px;
+    input {
+        margin-bottom: 15px;
+        border: none;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 0 20px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+   
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
+    }
+    &_mt25 {
+        margin-top: 25px;
+    }
+    input.error {
+        margin-bottom: 8px;
+    }
+    .error {
+        border: 2px solid $primary-color;
+    }
+    label.error {
+        border: none;
+        margin: 0 0 15px 23px;
+        color: $primary-color;
+        font-size: 13px;
+        line-height: 12px;
+        font-weight: 700;
+    }
+}
+
+.modal label.error {
+    font-size: 12px;
+    font-weight: 500;
+}
