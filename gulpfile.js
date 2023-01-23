@@ -46,6 +46,11 @@ gulp.task('html', function () {
         .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('gitignore', function () {
+    return gulp.src('.gitignore')
+        .pipe(gulp.dest('dist/'));
+});
+
 //Uploading files in dist
 gulp.task('scripts', function () {
     return gulp.src('src/js/**/*.js')
@@ -72,5 +77,4 @@ gulp.task('images', function () {
         .pipe(gulp.dest('dist/images'));
 });
 
-
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images'));
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images', 'gitignore'));
